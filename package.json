@@ -1,0 +1,30 @@
+{
+  "name": "pure-email-client",
+  "version": "1.0.0",
+  "description": "Email client test for Pure 360 ",
+  "main": "index.js",
+  "scripts": {
+    "test": "tbc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "tbc"
+  },
+  "keywords": [
+    "email",
+    "test",
+    "angular"
+  ],
+  "author": "Yorick Brown",
+  "license": "ISC",
+  "devDependencies": {
+    "angular": "^1.7.4",
+    "angular-animate": "^1.7.4",
+    "angular-aria": "^1.7.4",
+    "angular-material": "^1.1.10",
+    "angular-messages": "^1.7.4",
+    "angular-route": "^1.7.4",
+    "angular-sanitize": "^1.7.4",
+    "less": "^3.8.1"
+  }
+}
