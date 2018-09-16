@@ -4,11 +4,12 @@
   "description": "Email client test for Pure 360 ",
   "main": "index.js",
   "scripts": {
-    "start": "npm install && grunt"
+    "start": "npm install && grunt",
+    "update-live": "npm install && grunt build"
   },
   "repository": {
     "type": "git",
-    "url": "tbc"
+    "url": "https://github.com/yodiyo/pure-email-client/"
   },
   "keywords": [
     "email",
