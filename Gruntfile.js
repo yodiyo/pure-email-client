@@ -31,7 +31,10 @@ module.exports = function (grunt) {
             },
             production: {
                 files: {
-                    'dist/js/bundle.js': 'src/js/**/*.js'
+                    'dist/js/bundle.js': [
+                        'src/js/**/*.js',
+                        '!src/js/**/*.tests.js'
+                    ]
                 }
             }
         },
@@ -98,8 +101,27 @@ module.exports = function (grunt) {
             }
           }
         },
+        karma: {
+            unit: {
+                options: {
+                    frameworks: ['jasmine'],
+                    singleRun: true,
+                    browsers: ['PhantomJS'],
+                    files: [
+                        'node_modules/angular/angular.js',
+                        'node_modules/angular-aria/angular-aria.js',
+                        'node_modules/angular-animate/angular-animate.js',
+                        'node_modules/angular-route/angular-route.js',
+                        'node_modules/angular-sanitize/angular-sanitize.js',
+                        'node_modules/angular-mocks/angular-mocks.js',
+                        'src/js/**/*.js'
+                    ]
+                }
+            }
+        }
     });
 
+    grunt.registerTask('test', ['jshint', 'karma']);
     grunt.registerTask('default', ['copy:main', 'concat:development', 'sass:development', 'jshint', 'connect', 'watch']);
     grunt.registerTask('build', ['copy:main', 'sass:production', 'ngAnnotate', 'connect']);
 };
