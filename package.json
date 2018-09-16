@@ -4,7 +4,7 @@
   "description": "Email client test for Pure 360 ",
   "main": "index.js",
   "scripts": {
-    "test": "tbc"
+    "start": "npm install && grunt"
   },
   "repository": {
     "type": "git",
@@ -18,13 +18,30 @@
   "author": "Yorick Brown",
   "license": "ISC",
   "devDependencies": {
+    "ajv": "^6.5.3",
     "angular": "^1.7.4",
     "angular-animate": "^1.7.4",
     "angular-aria": "^1.7.4",
-    "angular-material": "^1.1.10",
-    "angular-messages": "^1.7.4",
     "angular-route": "^1.7.4",
     "angular-sanitize": "^1.7.4",
-    "less": "^3.8.1"
+    "autoprefixer": "^9.1.5",
+    "bootstrap": "^4.1.3",
+    "grunt": "^1.0.3",
+    "grunt-cli": "^1.3.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-connect": "^2.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^3.0.0",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-requirejs": "^1.0.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^4.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-eslint": "^21.0.0",
+    "grunt-ng-annotate": "^3.0.0",
+    "grunt-postcss": "^0.9.0",
+    "jit-grunt": "^0.10.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.4"
   }
 }
