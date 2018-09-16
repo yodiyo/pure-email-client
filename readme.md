@@ -7,14 +7,14 @@ Create a SPA that:
 * [x] The user should be able to toggle the HTML and plain versions
 * [x] HTML version is rendered correctly with styles
 * [x] Plain version is rendered raw with line breaks preserved
-* Has unit tests - still to do
+* [ ] Has unit tests - still to do
 
 Bonus points:
 
 * [x] Some styles applied using modern tooling (e.g. a pre-processor)
-* An end to end test - still to do
+* [ ] An end to end test - still to do
 * [x] Use of a router - check
-* Webpack/Parcel - used Grunt - working on it but the Webpack learning curve is steep!
+* [ ] Webpack/Parcel - used Grunt - working on it but the Webpack learning curve is steep!
 * [x] Production mode - check
 
 ## Make it work
