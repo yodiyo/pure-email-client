@@ -94,11 +94,12 @@ module.exports = function (grunt) {
               protocol: 'http',
               livereload: true,
               open: true,
+              keepalive: true
             }
           }
         },
     });
 
     grunt.registerTask('default', ['copy:main', 'concat:development', 'sass:development', 'jshint', 'connect', 'watch']);
-    grunt.registerTask('build', ['copy:main', 'sass:production', 'ngAnnotate']);
+    grunt.registerTask('build', ['copy:main', 'sass:production', 'ngAnnotate', 'connect']);
 };
