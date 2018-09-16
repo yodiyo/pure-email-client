@@ -1,0 +1,65 @@
+@import 'variables';
+@import 'bootstrap/bootstrap';
+
+
+/* header */
+
+#banner {
+    background-color: $primary-color;
+    h1 {
+        font-size: 1.5em;
+        font-size: 1.5rem;
+        color: white;
+        text-align: center;
+        padding: 15px;
+    }
+}
+
+
+/* index */
+
+.table {
+    width: 75%;
+    margin: 10px auto;
+    border: 1px solid $primary-color;
+}
+
+
+/* detail */
+
+.email-info {
+    text-align: left;
+    margin: 10px 5%;
+    .info {
+        margin: 30px 25%;
+        .email-name,
+        .email-subject {
+            color: black;
+            font-size: 1.2em;
+            font-size: 1.2rem;
+            font-weight: normal;
+        }
+    }
+    .email-display {
+        text-align: center;
+    }
+    a {
+        color: $link-color;
+    }
+}
+
+
+/* make sure link styles not overwritten by html email css */
+
+body {
+    font: 100% $font-stack;
+    background-color: white !important;
+}
+
+button {
+    a,
+    a:hover {
+        color: $btn-link-color;
+        text-decoration: none;
+    }
+}

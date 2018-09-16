@@ -1,0 +1,25 @@
+<section class="email-info">
+
+    <a href="./">&lt; Emails</a>
+
+    <div class="info">
+        <p class="email-name">Message name: {{email.name}}</p>
+        <p class="email-subject">
+            Subject line:
+            <span ng-repeat="subject in email.subjects">{{subject}} </span>
+        </p>
+    </div>
+
+    <div class="email-display">
+        <button type="button" class="btn btn-primary btn-html" ng-class="{ active: isSet('html') }" ng-click="setVersion('html')">HTML</button>
+        <button type="button" class="btn btn-primary btn-text" ng-class="{ active: isSet('text') }" ng-click="setVersion('text')">Text</button>
+    </div>
+
+</section>
+
+<section class="email-content">
+
+    <article ng-show="isSet('text')" class="email-text" ng-bind-html="text" style="white-space: pre-wrap; background-color: white; padding: 5%;"></article>
+    <article ng-show="isSet('html')" class="email-html" ng-bind-html="html"></article>
+
+</section>

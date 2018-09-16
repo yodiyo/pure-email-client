@@ -1,0 +1,20 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Subject</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody >
+        <tr ng-repeat="item in emails">
+            <td>{{item.name}}</td>
+       
+            <td> <span ng-repeat="subject in item.subjects">{{subject}}{{$last ? '' : ', '}}</span></td>
+            <td>
+                <a class="email-link" href="emails/{{$index}}" class="">More</a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</section>
